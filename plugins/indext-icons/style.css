@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'indext-icon';
+  src:  url('fonts/indext-icon.eot?82stv6');
+  src:  url('fonts/indext-icon.eot?82stv6#iefix') format('embedded-opentype'),
+    url('fonts/indext-icon.ttf?82stv6') format('truetype'),
+    url('fonts/indext-icon.woff?82stv6') format('woff'),
+    url('fonts/indext-icon.svg?82stv6#indext-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="indext-icon-"], [class*=" indext-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'indext-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.indext-icon-search-left:before {
+  content: "\e91c";
+}
+.indext-icon-love:before {
+  content: "\e91d";
+}
+.indext-icon-check-1-2:before {
+  content: "\e91b";
+}
+.indext-icon-service-1-6:before {
+  content: "\e915";
+}
+.indext-icon-service-1-5:before {
+  content: "\e916";
+}
+.indext-icon-check-1-1:before {
+  content: "\e910";
+}
+.indext-icon-arrow-up:before {
+  content: "\e90c";
+}
+.indext-icon-arrow-down:before {
+  content: "\e911";
+}
+.indext-icon-arrow-left:before {
+  content: "\e912";
+}
+.indext-icon-arrow-right:before {
+  content: "\e913";
+}
+.indext-icon-service-1-3:before {
+  content: "\e900";
+}
+.indext-icon-about-1-1:before {
+  content: "\e901";
+}
+.indext-icon-about-1-2:before {
+  content: "\e902";
+}
+.indext-icon-Bag:before {
+  content: "\e903";
+}
+.indext-icon-clock:before {
+  content: "\e904";
+}
+.indext-icon-cta-1-1:before {
+  content: "\e905";
+}
+.indext-icon-cta-1-2:before {
+  content: "\e906";
+}
+.indext-icon-envelope:before {
+  content: "\e907";
+}
+.indext-icon-Search:before {
+  content: "\e908";
+}
+.indext-icon-service-1-1:before {
+  content: "\e909";
+}
+.indext-icon-service-1-2:before {
+  content: "\e90a";
+}
+.indext-icon-service-1-4:before {
+  content: "\e90b";
+}
+.indext-icon-contact-1:before {
+  content: "\e90d";
+}
+.indext-icon-contact-2:before {
+  content: "\e90e";
+}
+.indext-icon-contact-3:before {
+  content: "\e90f";
+}
+.indext-icon-left-arrow:before {
+  content: "\e914";
+}
+.indext-icon-vision-1-1:before {
+  content: "\e917";
+}
+.indext-icon-mission-1-1:before {
+  content: "\e918";
+}
+.indext-icon-fact-1-2:before {
+  content: "\e919";
+}
+.indext-icon-fact-1-1:before {
+  content: "\e91a";
+}
+.indext-icon-conveyor:before {
+  content: "\e91e";
+}
+.indext-icon-dump-truck:before {
+  content: "\e91f";
+}
+.indext-icon-factory:before {
+  content: "\e920";
+}
+.indext-icon-home:before {
+  content: "\e921";
+}
+.indext-icon-robot-arm:before {
+  content: "\e922";
+}
+.indext-icon-sketch:before {
+  content: "\e923";
+}
+.indext-icon-left:before {
+  content: "\e924";
+}
+.indext-icon-right:before {
+  content: "\e925";
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1号线、2号线地图</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CRubik:400,400i,500,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/indext-icons/style.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/jquery.bootstrap-touchspin.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+</head>
+
+<body>
+    <div class="preloader"><span></span></div><!-- /.preloader -->
+    <div class="page-wrapper">
+        <div class="topbar-one">
+            <div class="container">
+                <div class="topbar-one__left">
+                    <div class="topbar-one__social">
+                        <a href="https://www.qq.com/"><i class="fa fa-qq"></i><!-- /.fa fa-facebook-f --></a>
+                        <a href="https://weixin.qq.com/"><i class="fa fa-weixin"></i><!-- /.fa fa-twitter --></a>
+                        <a href="https://weibo.com"><i class="fa fa-weibo"></i><!-- /.fa fa-rss --></a>
+                        <a href="https://www.163.com/rss"><i class="fa fa-rss"></i><!-- /.fa fa-google-plus --></a>
+                        <a href="https://twitter.com/"><i class="fa fa-twitter"></i><!-- /.fa fa-vimeo --></a>
+                    </div><!-- /.topbar-one__social -->
+                </div><!-- /.topbar-one__left -->
+                <div class="topbar-one__right">
+                    <div class="topbar-one__links">
+                        <a href="#" class="topbar-one__search search-popup__toggler"><i class="indext-icon-Search"></i>
+                            <!-- /.indext-icon-Search --></a><!-- /.topbar-one__search -->
+                        <a href="#" class="topbar-one__cart"><i class="indext-icon-Bag"></i>
+                            <!-- /.indext-icon-Bag --></a><!-- /.topbar-one__cart -->
+                        <a href="#" class="topbar-one__link"><i class="indext-icon-clock"></i><!-- /.indext-icon-clock -->Mon -
+                            Sun: 9.00 - 18.00</a><!-- /.topbar-one__link -->
+                        <a href="#" class="topbar-one__link"><i class="indext-icon-envelope"></i>
+                            <!-- /.indext-icon-envelope -->ncrtxx@163.com </a><!-- /.topbar-one__link -->
+                    </div><!-- /.topbar-one__links -->
+                </div><!-- /.topbar-one__right -->
+            </div><!-- /.container -->
+        </div><!-- /.topbar-one -->
+        <header class="site-header site-header__header-one ">
+            <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                <div class="container clearfix">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="logo-box">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/resources/full-light-logo.png" width="185" class="main-logo" alt="Awesome Image" />
+                        </a>
+                        <button class="menu-toggler" data-target=".main-navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div><!-- /.logo-box -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main-navigation">
+                        <ul class=" navigation-box @@extra_class">
+                            <li><a href="index.html">主页</a></li>
+                            <li>
+                                <a href="service.html">乘客服务</a>
+                                <ul class="submenu">
+                                    <li><a href="map.html#dituContent">1号线地图</a></li>
+                                    <li><a href="map.html#dituContent1">2号线地图</a></li>
+                                    <li><a href="service.html#time">运营时间查询</a></li>
+                                    <li><a href="service-ticket.html">购票指南</a></li>
+                                    <li><a href="service.html#laf">失物招领</a></li>
+                                    <li><a href="service-notice.html">禁带物品公告</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li>
+                                <a href="view.html">热门景点</a>
+                                <ul class="submenu">
+                                    <li><a href="view.html#l-map">地图查询</a></li>
+                                    <li><a href="view.html#hot">热门景点</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li>
+                                <a href="foods.html">美食购物</a>
+                                <ul class="submenu">
+                                    <li><a href="foods.html">美食推荐</a></li>
+                                    <li><a href="shop.html">商圈购物</a></li>
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li>
+                                <a href="news.html">地铁新闻</a>
+                                <ul class="submenu">
+                                    <li><a href="news.html">地铁新闻</a></li>
+                                    <li><a href="#.html">地铁视频</a></li>
+                                    
+                                </ul><!-- /.submenu -->
+                            </li>
+                            <li><a href="history.html">发展历史</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                    <div class="right-side-box">
+                        <a href="contact.html" class="thm-btn site-header__qoute-btn">联系我们 <i class="fa fa-long-arrow-right"></i>
+                        </a><!-- /.thm-btn -->
+                    </div><!-- /.right-side-box -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header><!-- /.site-header -->
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">1号线、2号线地图</h2><!-- /.inner-banner__title -->
+                <ul class="list-unstyled thm-breadcrumb">
+                    <li><a href="index.html">主页</a></li>
+                    <li class="active"><a href="map.html">1号线、2号线地图</a></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section><!-- /.inner-banner -->
+        <section class="blog-classic">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="blog-one__single">
+                                    <!--地图容器-->
+                                    <div style="width:767px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+                                    <script type="text/javascript">
+                                        //创建和初始化1号线地图函数：
+                                        function initMap(){
+                                            createMap();//创建地图
+                                            setMapEvent();//设置地图事件
+                                            addMapControl();//向地图添加控件
+                                        }
+                                        
+                                        //创建地图函数：
+                                        function createMap(){
+                                            var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                                            var point = new BMap.Point(115.919843,28.680261);//定义一个中心点坐标
+                                            map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+                                            window.map = map;//将map变量存储在全局
+                                        }
+
+                                        //地图事件设置函数：
+                                        function setMapEvent(){
+                                            map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                                            map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                                            map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                                            map.enableKeyboard();//启用键盘上下左右键移动地图
+                                        }
+                                        
+                                        //地图控件添加函数：
+                                        function addMapControl(){
+                                            //向地图中添加缩放控件
+                                        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                                        map.addControl(ctrl_nav);
+                                            //向地图中添加缩略图控件
+                                        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                                        map.addControl(ctrl_ove);
+                                            //向地图中添加比例尺控件
+                                        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                                        map.addControl(ctrl_sca);
+                                        }
+                                        initMap();//创建和初始化地图
+                                    </script>
+
+                                    <div class="blog-one__meta">
+                                        <a href="map.html#dituContent">1号线</a>
+                                    </div><!-- /.blog-one__meta -->
+                                    <h2 class="blog-one__title"><a href="map.html#dituContent">南昌地铁1号线</a></h2><!-- /.blog-one__title -->
+                                    <p class="blog-one__text">地图是南昌地铁1号线周边，可以鼠标滚轮缩放查看周边的景点、美食、商圈等。</p><!-- /.blog-one__text -->
+                                </div><!-- /.blog-one__single -->
+                            </div><!-- /.col-lg-6 -->
+                            <div class="col-lg-12">
+                                <div class="blog-one__single">
+                                    <div style="width:767px;height:550px;border:#ccc solid 1px;" id="dituContent1"></div>
+                                    <script type="text/javascript">
+                                        //创建和初始化2号线地图函数：
+                                        function initMap1(){
+                                            createMap1();//创建地图
+                                            setMapEvent1();//设置地图事件
+                                            addMapControl1();//向地图添加控件
+                                        }
+                                        
+                                        //创建地图函数：
+                                        function createMap1(){
+                                            var map1 = new BMap.Map("dituContent1");//在百度地图容器中创建一个地图
+                                            var point1 = new BMap.Point(115.859369,28.690287);//定义一个中心点坐标
+                                            map1.centerAndZoom(point1,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+                                            window.map1 = map1;//将map变量存储在全局
+                                        }
+                                        
+                                        //地图事件设置函数：
+                                        function setMapEvent1(){
+                                            map1.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                                            map1.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                                            map1.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                                            map1.enableKeyboard();//启用键盘上下左右键移动地图
+                                        }
+                                        
+                                        //地图控件添加函数：
+                                        function addMapControl1(){
+                                            //向地图中添加缩放控件
+                                            var ctrl_nav1 = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                                            map1.addControl(ctrl_nav1);
+                                            //向地图中添加缩略图控件
+                                            var ctrl_ove1 = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                                            map1.addControl(ctrl_ove1);
+                                            //向地图中添加比例尺控件
+                                            var ctrl_sca1 = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                                            map1.addControl(ctrl_sca1);
+                                        }
+                                        initMap1();//创建和初始化地图   
+                                    </script>
+
+                                    <div class="blog-one__meta">
+                                        <a href="map.html#dituContent1">2号线</a>
+                                    </div><!-- /.blog-one__meta -->
+                                    <h2 class="blog-one__title"><a href="map.html#dituContent1">南昌地铁2号线</a></h2><!-- /.blog-one__title -->
+                                    <p class="blog-one__text">地图是南昌地铁2号线周边，可以鼠标滚轮缩放查看周边的景点、美食、商圈等。</p><!-- /.blog-one__text -->
+                                </div><!-- /.blog-one__single -->
+                            </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+                    </div><!-- /.col-lg-8 -->
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <div class="sidebar__single">
+                                <div class="sidebar__title-wrap">
+                                    <h2 class="sidebar__title">搜索</h2><!-- /.sidebar__title -->
+                                </div><!-- /.sidebar__title-wrap -->
+                                <form class="sidebar__search">
+                                    <input type="text" name="search" placeholder="搜索">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div><!-- /.sidebar__single -->
+                            <div class="sidebar__single">
+                                <div class="sidebar__title-wrap">
+                                    <h2 class="sidebar__title">地图功能</h2><!-- /.sidebar__title -->
+                                    <p class="sidebar__tag-line">游客可以通过地图查看地图周边的景点、商圈，进行游玩，品尝美食，购物娱乐等。</p>
+                                </div><!-- /.sidebar__title-wrap -->
+                                <ul class="sidebar__cat-list list-unstyled">
+                                    <li><a href="#">景点</a></li>
+                                    <li><a href="#">购物</a></li>
+                                    <li><a href="#">美食</a></li>
+                                    <li><a href="#">娱乐</a></li>
+                                    <li><a href="#">新闻</a></li>
+                                </ul>
+                            </div><!-- /.sidebar__single -->
+                            <div class="sidebar__single">
+                                <div class="sidebar__title-wrap">
+                                    <h2 class="sidebar__title">最新消息</h2><!-- /.sidebar__title -->
+                                </div><!-- /.sidebar__title-wrap -->
+                                <div class="sidebar__post">
+                                    <div class="sidebar__post-thumb"><img src="images/news/0-1.jpg" alt="" class="sidebar__post-img"></div>
+                                    <!-- /.sidebar__post-thumb -->
+                                    <div class="sidebar__post-content">
+                                        <span class="sidebar__post-date">2020年5月31日</span>
+                                        <h3 class="sidebar__post-title"><a href="blog-details.html">轨道3号线全线“电通”。</a></h3>
+                                    </div><!-- /.sidebar__post-content -->
+                                </div><!-- /.sidebar__post -->
+                                <div class="sidebar__post">
+                                    <div class="sidebar__post-thumb"><img src="images/news/1.jpg" alt="" class="sidebar__post-img"></div>
+                                    <!-- /.sidebar__post-thumb -->
+                                    <div class="sidebar__post-content">
+                                        <span class="sidebar__post-date">2020年5月27日</span>
+                                        <h3 class="sidebar__post-title"><a href="blog-details.html">黄喜忠市长调研南昌轨道交通集团。</a></h3>
+                                    </div><!-- /.sidebar__post-content -->
+                                </div><!-- /.sidebar__post -->
+                                <div class="sidebar__post">
+                                    <div class="sidebar__post-thumb"><img src="images/news/1.png" alt="" class="sidebar__post-img"></div>
+                                    <!-- /.sidebar__post-thumb -->
+                                    <div class="sidebar__post-content">
+                                        <span class="sidebar__post-date">2020年5月26日</span>
+                                        <h3 class="sidebar__post-title"><a href="blog-details.html">集团召开2019年度乘客满意度调查报告会。</a></h3>
+                                    </div><!-- /.sidebar__post-content -->
+                                </div><!-- /.sidebar__post -->
+                            </div><!-- /.sidebar__single -->
+                            <div class="sidebar__single">
+                                <div class="sidebar__title-wrap">
+                                    <h2 class="sidebar__title">搜索热词</h2><!-- /.sidebar__title -->
+                                </div><!-- /.sidebar__title-wrap -->
+                                <div class="sidebar__tags">
+                                    <a href="#">1号线</a>
+                                    <a href="#">2号线</a>
+                                    <a href="#">景点</a>
+                                    <a href="#">滕王阁</a>
+                                    <a href="#">小吃</a>
+                                    <a href="#">美食</a>
+                                    <a href="#">好玩</a>
+                                    <a href="#">南昌之星</a>
+                                </div><!-- /.sidebar__gallery -->
+                            </div><!-- /.sidebar__single -->
+
+                        </div><!-- /.sidebar -->
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.blog-classic -->
+        <footer class="site-footer">
+            <div class="site-footer__brand">
+                <div class="container">
+                    <div class="site-footer__brand-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="images/brand/brand-1.jpg" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-2.jpg" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-3.jpg" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-4.jpg" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-5.jpg" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-6.jpg" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-7.jpg" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-8.jpg" alt="brand image">
+                        </div><!-- /.item -->
+                    </div><!-- /.site-footer__brand-carousel -->
+                    <hr class="site-footer__brand-hr">
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__brand -->
+            <div class="site-footer__upper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-5">
+                            <div class="footer-widget footer-widget__about-widget">
+                                <a href="index.html"><img src="images/favicon/sub.jpg" width="185" class="footer-widget__logo" alt=""></a>
+                                <p class="footer-widget__text">南昌轨道交通集团成立于2008年10月，现有员工4300余人，下设3个分公司、3个全资子公司、5个参股子公司。主要承担南昌市轨道交通建设的融资、建设、运营、管理职能。南昌地铁将按照“全力以赴保平安，科学调度抓进度，履职履责促管理，尽心尽力优质量，互相配合强协调，铁心硬手严问责”42个字管理理念，撸起袖子加油干，为建设一流现代化企业集团，实现南昌地铁新一轮大发展、大跨越努力奋斗！</p><!-- /.footer-widget__text -->
+                                <div class="footer-widget__social">
+                                    <a href="#" class="fa fa-qq"></a>
+                                    <a href="#" class="fa fa-weixin"></a>
+                                    <a href="#" class="fa fa-weibo"></a>
+                                    <a href="#" class="fa fa-rss"></a>
+                                </div><!-- /.footer-widget__social -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="footer-widget footer-widget__links-widget">
+                                <h2 class="footer-widget__title">快速链接</h2><!-- /.footer-widget__title -->
+                                <ul class="footer-widget__links list-unstyled">
+                                    <li><a href="history.html"> 公司历史</a></li>
+                                    <li><a href="contact.html"> 联系我们</a></li>
+                                    <li><a href="service.html"> 乘客服务</a></li>
+                                    <li><a href="news.html"> 地铁新闻</a></li>
+                                </ul><!-- /.footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="footer-widget footer-widget__contact-widget">
+                                <h2 class="footer-widget__title">联系信息</h2><!-- /.footer-widget__title -->
+                                <p class="footer-widget__text">江西省南昌市红谷滩新区 <br> 丰和中大道 地铁大厦
+                                </p>
+                                <!-- /.footer-widget__text -->
+                                <p class="footer-widget__text">传真：0791-83892008</p><!-- /.footer-widget__text -->
+                                <p class="footer-widget__text">客服热线：0791-96999</p><!-- /.footer-widget__text -->
+                                <p class="footer-widget__text">邮箱：ncrtxx@163.com</p><!-- /.footer-widget__text -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__upper -->
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="site-footer__copy"><a href="#">Copyright </a> <i class="fa fa-copyright"></i> 2020 南昌地铁 版权所有</div>
+                    <!-- /.site-footer__copy -->
+                    <ul class="list-unstyled site-footer__links">
+                        <li><a href="#">服务条款</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul><!-- /.list-unstyled -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__bottom -->
+        </footer><!-- /.site-footer -->
+    </div><!-- /.page-wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.search-popup__overlay -->
+        <div class="search-popup__inner">
+            <form action="#" class="search-popup__form">
+                <input type="text" name="search" placeholder="在此输入搜索....">
+                <button type="submit"><i class="indext-icon-Search"></i></button>
+            </form>
+        </div><!-- /.search-popup__inner -->
+    </div><!-- /.search-popup -->
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="indext-icon-arrow-up"></i></a>
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/nouislider.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="js/theme.js"></script>
+
+</body>
+
+</html>
